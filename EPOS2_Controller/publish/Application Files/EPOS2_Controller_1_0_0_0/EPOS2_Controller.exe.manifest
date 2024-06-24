@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="EPOS2_Controller.exe" version="1.0.0.0" publicKeyToken="5ddadc278e45da04" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="EPOS2_Controller" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="EPOS2_Controller.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EPOS2_Controller.exe" size="18928">
+      <assemblyIdentity name="EPOS2_Controller" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MJ0wMiOEO51N6GG4RZ6Y6bGzVwEyKihnZu5bf2xI12Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EposCmd.Net.dll" size="213376">
+      <assemblyIdentity name="EposCmd.Net" version="6.8.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>t45reYEk9OnxswlOlI9CeJDpfZ+/rGaxPtoW6jqqT/Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="serialDriver.dll" size="8704">
+      <assemblyIdentity name="serialDriver" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lsmFQpV6PdBiLyJo6z1M+65K6r8CZvh5YPo80w64/2g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="EPOS2_Controller.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=PROCYONTECH\divyaprakash" issuerKeyHash="63766f89b489c3c2d9e7dbfe40273922f223d6f7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Dwef7zevnDwe3GHRzutcCyIocJd7Gj90Ajkq0zzaaT0=</DigestValue></Reference></SignedInfo><SignatureValue>JTvE66XSmipUEMcLY5KCVFbbToU/nRMcaGy1h9s9uiJMYIyrKeG6pKDq0/S8jg3jQMN1T3cH0SXwNSDmKsq9tnDsjyMoMLUMDnW7v1ejeEWpSOlvziDhQHZ5a35d3A6a57RuNcpKneKQPA/soKNG8NvqiWoDczyFVWRi633gC1I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tA9xa+EUfRNdf7rYuWZi70G6WcqWZRM9cYLHNq8z+ioskQg63D4e/7Nw/blj8F6KDaKYFWerRHa2Gw8ZA8q6DLqDlJle130w0w2LB0nSCuBivpBuYov55p89USYUCS3LiLdcK3SIFlXeAWps/4FVYxPYJ16eWRDBiNmv0uOkgDU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3d69da3cd32a3902743f1a7b977028220b5cebced161dc1e3c9caf37ef9f070f" Description="" Url=""><as:assemblyIdentity name="EPOS2_Controller.exe" version="1.0.0.0" publicKeyToken="5ddadc278e45da04" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PROCYONTECH\divyaprakash</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tiz41QU1mMPP+8iOahefXbTXCvw570To3MVpsrxOh4w=</DigestValue></Reference></SignedInfo><SignatureValue>PkOFoH1Yt/Jrb7OPPfaaW8h8j0iqtzKMrCMtd+SNZiAPky5gzpYpI9L4zRIjaPi4eVH6/Rk12c2JtDUx2pQ0VekGxF0D2Hxs5eRY1dIFl8cdgk3lDeSet8WqVtPKUM3cIBBFRq69FpnjvAkXOSlKVtecaEbJnNdhGx1d8SWQWkw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tA9xa+EUfRNdf7rYuWZi70G6WcqWZRM9cYLHNq8z+ioskQg63D4e/7Nw/blj8F6KDaKYFWerRHa2Gw8ZA8q6DLqDlJle130w0w2LB0nSCuBivpBuYov55p89USYUCS3LiLdcK3SIFlXeAWps/4FVYxPYJ16eWRDBiNmv0uOkgDU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQElryxvbTqq5J5jzEDVjOYTANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAAUABSAE8AQwBZAE8ATgBUAEUAQwBIAFwAZABpAHYAeQBhAHAAcgBhAGsAYQBzAGgwHhcNMjQwNjIyMDg0NDQ0WhcNMjUwNjIyMTQ0NDQ0WjA7MTkwNwYDVQQDHjAAUABSAE8AQwBZAE8ATgBUAEUAQwBIAFwAZABpAHYAeQBhAHAAcgBhAGsAYQBzAGgwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALQPcWvhFH0TXX+62LlmYu9BulnKlmUTPXGCxzavM/oqLJEIOtw+Hv+zcP25Y/Beig2imBVnq0R2thsPGQPKugy6g5SZXtd9MNMNiwdJ0grgYr6QbmKL+eafPVEmFAkty4i3XCt0iBZV3gFqbP+BVWMT2CdenlkQwYjZr9LjpIA1AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAFhoIt7+sa4TG4Eh5awn2MEskh4WnhOg9tiM0y512+8WE13eLM2Tkp8CdEbH217+CeZ6jimyaXPXnRH7yhKhr+0vzoigllECwE7ttMA0Le+Mzrt7juYWJY48OkeTxowdTQkX2oOYwax97loM7PybdvVK61QcKRpm1WgUA1XDbdNE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
